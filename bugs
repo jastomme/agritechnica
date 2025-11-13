@@ -1,0 +1,198 @@
+Description	Resource	Path	Location	Type
+Cloud cannot be resolved	Controllers.java	/fieldmapper/src/com/bosch/nevonex/main/impl	line 197	Java Problem
+Cloud cannot be resolved	Controllers.java	/fieldmapper/src/com/bosch/nevonex/main/impl	line 206	Java Problem
+CloudPriority cannot be resolved to a variable	Controllers.java	/fieldmapper/src/com/bosch/nevonex/main/impl	line 197	Java Problem
+CloudPriority cannot be resolved to a variable	Controllers.java	/fieldmapper/src/com/bosch/nevonex/main/impl	line 206	Java Problem
+IImplementControl cannot be resolved to a type	Controllers.java	/fieldmapper/src/com/bosch/nevonex/main/impl	line 51	Java Problem
+IImplementControl cannot be resolved to a type	Controllers.java	/fieldmapper/src/com/bosch/nevonex/main/impl	line 64	Java Problem
+IImplementControl cannot be resolved to a type	Controllers.java	/fieldmapper/src/com/bosch/nevonex/main/impl	line 64	Java Problem
+IImplementControl cannot be resolved to a type	Controllers.java	/fieldmapper/src/com/bosch/nevonex/main/impl	line 64	Java Problem
+IImplementControl cannot be resolved to a type	Controllers.java	/fieldmapper/src/com/bosch/nevonex/main/impl	line 71	Java Problem
+IImplementControl cannot be resolved to a type	Controllers.java	/fieldmapper/src/com/bosch/nevonex/main/impl	line 99	Java Problem
+IImplementControl cannot be resolved to a type	Controllers.java	/fieldmapper/src/com/bosch/nevonex/main/impl	line 100	Java Problem
+IImplementControl cannot be resolved to a type	Controllers.java	/fieldmapper/src/com/bosch/nevonex/main/impl	line 103	Java Problem
+IImplementControl cannot be resolved to a type	Controllers.java	/fieldmapper/src/com/bosch/nevonex/main/impl	line 104	Java Problem
+IImplementControl cannot be resolved to a type	Controllers.java	/fieldmapper/src/com/bosch/nevonex/main/impl	line 216	Java Problem
+IImplementControl cannot be resolved to a type	Controllers.java	/fieldmapper/src/com/bosch/nevonex/main/impl	line 217	Java Problem
+ImplementState cannot be resolved to a variable	Controllers.java	/fieldmapper/src/com/bosch/nevonex/main/impl	line 100	Java Problem
+ImplementState cannot be resolved to a variable	Controllers.java	/fieldmapper/src/com/bosch/nevonex/main/impl	line 104	Java Problem
+ImplementState cannot be resolved to a variable	Controllers.java	/fieldmapper/src/com/bosch/nevonex/main/impl	line 217	Java Problem
+Position cannot be resolved to a type	Controllers.java	/fieldmapper/src/com/bosch/nevonex/main/impl	line 83	Java Problem
+The import com.bosch.nevonex.api cannot be resolved	Controllers.java	/fieldmapper/src/com/bosch/nevonex/main/impl	line 7	Java Problem
+The import com.bosch.nevonex.cloud cannot be resolved	Controllers.java	/fieldmapper/src/com/bosch/nevonex/main/impl	line 8	Java Problem
+The import com.bosch.nevonex.cloud cannot be resolved	Controllers.java	/fieldmapper/src/com/bosch/nevonex/main/impl	line 9	Java Problem
+The import com.bosch.nevonex.implement.IImplementControl cannot be resolved	Controllers.java	/fieldmapper/src/com/bosch/nevonex/main/impl	line 11	Java Problem
+The import com.bosch.nevonex.implement.ImplementState cannot be resolved	Controllers.java	/fieldmapper/src/com/bosch/nevonex/main/impl	line 12	Java Problem
+The import com.bosch.nevonex.usercontrols cannot be resolved	Controllers.java	/fieldmapper/src/com/bosch/nevonex/main/impl	line 15	Java Problem
+The import com.bosch.nevonex.usercontrols cannot be resolved	Controllers.java	/fieldmapper/src/com/bosch/nevonex/main/impl	line 16	Java Problem
+The method error(String) is undefined for the type FCALLogs	Controllers.java	/fieldmapper/src/com/bosch/nevonex/main/impl	line 58	Java Problem
+The method error(String) is undefined for the type FCALLogs	Controllers.java	/fieldmapper/src/com/bosch/nevonex/main/impl	line 73	Java Problem
+The method error(String) is undefined for the type FCALLogs	Controllers.java	/fieldmapper/src/com/bosch/nevonex/main/impl	line 126	Java Problem
+The method error(String) is undefined for the type FCALLogs	Controllers.java	/fieldmapper/src/com/bosch/nevonex/main/impl	line 201	Java Problem
+The method error(String) is undefined for the type FCALLogs	Controllers.java	/fieldmapper/src/com/bosch/nevonex/main/impl	line 247	Java Problem
+The method getFeature() is undefined for the type btnStartPropertyListener	btnStartPropertyListener.java	/fieldmapper/src/com/bosch/nevonex/main/impl	line 5	Java Problem
+The method getPosition() is undefined for the type IImplement	Controllers.java	/fieldmapper/src/com/bosch/nevonex/main/impl	line 83	Java Problem
+The method info(String) is undefined for the type FCALLogs	Controllers.java	/fieldmapper/src/com/bosch/nevonex/main/impl	line 106	Java Problem
+The method info(String) is undefined for the type FCALLogs	Controllers.java	/fieldmapper/src/com/bosch/nevonex/main/impl	line 176	Java Problem
+The method info(String) is undefined for the type FCALLogs	Controllers.java	/fieldmapper/src/com/bosch/nevonex/main/impl	line 199	Java Problem
+The method info(String) is undefined for the type FCALLogs	Controllers.java	/fieldmapper/src/com/bosch/nevonex/main/impl	line 215	Java Problem
+The method info(String) is undefined for the type FCALLogs	Controllers.java	/fieldmapper/src/com/bosch/nevonex/main/impl	line 225	Java Problem
+The method info(String) is undefined for the type FCALLogs	Controllers.java	/fieldmapper/src/com/bosch/nevonex/main/impl	line 244	Java Problem
+The method init() of type Controllers must override or implement a supertype method	Controllers.java	/fieldmapper/src/com/bosch/nevonex/main/impl	line 55	Java Problem
+The method onCloudFileDownloaded(String, byte[]) of type Controllers must override or implement a supertype method	Controllers.java	/fieldmapper/src/com/bosch/nevonex/main/impl	line 232	Java Problem
+The method onCloudMessageReceived(String) of type Controllers must override or implement a supertype method	Controllers.java	/fieldmapper/src/com/bosch/nevonex/main/impl	line 224	Java Problem
+The method warn(String) is undefined for the type FCALLogs	Controllers.java	/fieldmapper/src/com/bosch/nevonex/main/impl	line 85	Java Problem
+The method warn(String) is undefined for the type FCALLogs	Controllers.java	/fieldmapper/src/com/bosch/nevonex/main/impl	line 102	Java Problem
+The method warn(String) is undefined for the type FCALLogs	Controllers.java	/fieldmapper/src/com/bosch/nevonex/main/impl	line 117	Java Problem
+The method warn(String) is undefined for the type FCALLogs	Controllers.java	/fieldmapper/src/com/bosch/nevonex/main/impl	line 187	Java Problem
+UserControls cannot be resolved	Controllers.java	/fieldmapper/src/com/bosch/nevonex/main/impl	line 59	Java Problem
+UserControls cannot be resolved	Controllers.java	/fieldmapper/src/com/bosch/nevonex/main/impl	line 67	Java Problem
+UserControls cannot be resolved	Controllers.java	/fieldmapper/src/com/bosch/nevonex/main/impl	line 68	Java Problem
+UserControls cannot be resolved	Controllers.java	/fieldmapper/src/com/bosch/nevonex/main/impl	line 69	Java Problem
+UserControls cannot be resolved	Controllers.java	/fieldmapper/src/com/bosch/nevonex/main/impl	line 95	Java Problem
+UserControls cannot be resolved	Controllers.java	/fieldmapper/src/com/bosch/nevonex/main/impl	line 101	Java Problem
+UserControls cannot be resolved	Controllers.java	/fieldmapper/src/com/bosch/nevonex/main/impl	line 105	Java Problem
+UserControls cannot be resolved	Controllers.java	/fieldmapper/src/com/bosch/nevonex/main/impl	line 123	Java Problem
+UserControls cannot be resolved	Controllers.java	/fieldmapper/src/com/bosch/nevonex/main/impl	line 156	Java Problem
+UserControls cannot be resolved	Controllers.java	/fieldmapper/src/com/bosch/nevonex/main/impl	line 166	Java Problem
+UserControls cannot be resolved	Controllers.java	/fieldmapper/src/com/bosch/nevonex/main/impl	line 186	Java Problem
+UserControls cannot be resolved	Controllers.java	/fieldmapper/src/com/bosch/nevonex/main/impl	line 198	Java Problem
+UserControls cannot be resolved	Controllers.java	/fieldmapper/src/com/bosch/nevonex/main/impl	line 202	Java Problem
+UserControls cannot be resolved	Controllers.java	/fieldmapper/src/com/bosch/nevonex/main/impl	line 207	Java Problem
+UserControls cannot be resolved	Controllers.java	/fieldmapper/src/com/bosch/nevonex/main/impl	line 218	Java Problem
+UserControlsException cannot be resolved to a type	Controllers.java	/fieldmapper/src/com/bosch/nevonex/main/impl	line 96	Java Problem
+UserControlsException cannot be resolved to a type	Controllers.java	/fieldmapper/src/com/bosch/nevonex/main/impl	line 157	Java Problem
+UserControlsException cannot be resolved to a type	Controllers.java	/fieldmapper/src/com/bosch/nevonex/main/impl	line 167	Java Problem
+ArrayList is a raw type. References to generic type ArrayList<E> should be parameterized	BulkProcessor.java	/com.bosch.fsp.fieldmapper.gen/src/com/bosch/nevonex/fcal/impl	line 75	Java Problem
+ArrayList is a raw type. References to generic type ArrayList<E> should be parameterized	UserControls.java	/com.bosch.fsp.fieldmapper.gen/src/com/bosch/nevonex/userdefined/impl	line 333	Java Problem
+ArrayList is a raw type. References to generic type ArrayList<E> should be parameterized	UserControls.java	/com.bosch.fsp.fieldmapper.gen/src/com/bosch/nevonex/userdefined/impl	line 460	Java Problem
+Collection is a raw type. References to generic type Collection<E> should be parameterized	ImplementProvider.java	/com.bosch.fsp.fieldmapper.gen/src/com/bosch/nevonex/implement/impl	line 407	Java Problem
+Collection is a raw type. References to generic type Collection<E> should be parameterized	ImplementProvider.java	/com.bosch.fsp.fieldmapper.gen/src/com/bosch/nevonex/implement/impl	line 407	Java Problem
+Collection is a raw type. References to generic type Collection<E> should be parameterized	ImplementProvider.java	/com.bosch.fsp.fieldmapper.gen/src/com/bosch/nevonex/implement/impl	line 494	Java Problem
+Execution environment is lower than one of the plug-in's dependencies (org.eclipse.core.runtime) which has an execution environment of JavaSE-11.	MANIFEST.MF	/com.bosch.fsp.fieldmapper.gen.tests/META-INF	line 9	Plug-in Problem
+Execution environment is lower than one of the plug-in's dependencies (org.eclipse.core.runtime) which has an execution environment of JavaSE-11.	MANIFEST.MF	/com.bosch.fsp.fieldmapper.gen/META-INF	line 10	Plug-in Problem
+Execution environment is lower than one of the plug-in's dependencies (org.eclipse.core.runtime) which has an execution environment of JavaSE-11.	MANIFEST.MF	/fieldmapper/META-INF	line 10	Plug-in Problem
+List is a raw type. References to generic type List<E> should be parameterized	ImplementProvider.java	/com.bosch.fsp.fieldmapper.gen/src/com/bosch/nevonex/implement/impl	line 422	Java Problem
+List is a raw type. References to generic type List<E> should be parameterized	SDKTest.java	/com.bosch.fsp.fieldmapper.gen.tests/src/com/bosch/nevonex/sdk/test	line 261	Java Problem
+List is a raw type. References to generic type List<E> should be parameterized	SDKTest.java	/com.bosch.fsp.fieldmapper.gen.tests/src/com/bosch/nevonex/sdk/test	line 262	Java Problem
+List is a raw type. References to generic type List<E> should be parameterized	SDKTest.java	/com.bosch.fsp.fieldmapper.gen.tests/src/com/bosch/nevonex/sdk/test	line 263	Java Problem
+List is a raw type. References to generic type List<E> should be parameterized	SDKTest.java	/com.bosch.fsp.fieldmapper.gen.tests/src/com/bosch/nevonex/sdk/test	line 264	Java Problem
+List is a raw type. References to generic type List<E> should be parameterized	UserControls.java	/com.bosch.fsp.fieldmapper.gen/src/com/bosch/nevonex/userdefined/impl	line 331	Java Problem
+List is a raw type. References to generic type List<E> should be parameterized	UserControls.java	/com.bosch.fsp.fieldmapper.gen/src/com/bosch/nevonex/userdefined/impl	line 333	Java Problem
+List is a raw type. References to generic type List<E> should be parameterized	UserControls.java	/com.bosch.fsp.fieldmapper.gen/src/com/bosch/nevonex/userdefined/impl	line 458	Java Problem
+List is a raw type. References to generic type List<E> should be parameterized	UserControls.java	/com.bosch.fsp.fieldmapper.gen/src/com/bosch/nevonex/userdefined/impl	line 460	Java Problem
+Map.Entry is a raw type. References to generic type Map.Entry<K,V> should be parameterized	UserControls.java	/com.bosch.fsp.fieldmapper.gen/src/com/bosch/nevonex/userdefined/impl	line 311	Java Problem
+The class folder 'resources/' is not associated to any output library entry.	build.properties	/com.bosch.fsp.fieldmapper.gen.tests	line 1	Plug-in Problem
+The file "plugin.xml" does not exist in the workspace	build.properties	/fieldmapper	line 6	Plug-in Problem
+The folder "model/" does not exist in the workspace	build.properties	/com.bosch.fsp.fieldmapper.gen	line 4	Plug-in Problem
+The folder "model/" does not exist in the workspace	build.properties	/fieldmapper	line 4	Plug-in Problem
+The import com.bosch.fsp.logger.FCALLogs is never used	IgnitionStateListener.java	/fieldmapper/src/com/bosch/nevonex/main/impl	line 6	Java Problem
+The import com.bosch.fsp.runtime.feature.application.AbstractFeatureNotification is never used	IgnitionStateListener.java	/fieldmapper/src/com/bosch/nevonex/main/impl	line 8	Java Problem
+The import com.bosch.fsp.runtime.feature.exception.CommunicationException is never used	SDKTest.java	/com.bosch.fsp.fieldmapper.gen.tests/src/com/bosch/nevonex/sdk/test	line 19	Java Problem
+The import com.bosch.fsp.runtime.feature.exception.MachineInitException is never used	SDKTest.java	/com.bosch.fsp.fieldmapper.gen.tests/src/com/bosch/nevonex/sdk/test	line 21	Java Problem
+The import com.bosch.fsp.runtime.feature.exception.MachineWriteException is never used	SDKTest.java	/com.bosch.fsp.fieldmapper.gen.tests/src/com/bosch/nevonex/sdk/test	line 20	Java Problem
+The import com.bosch.fsp.runtime.feature.exception.NevonexException is never used	MachineConnectListener.java	/fieldmapper/src/com/bosch/nevonex/main/impl	line 13	Java Problem
+The import com.bosch.fsp.runtime.feature.IMachineProvider is never used	SDKTest.java	/com.bosch.fsp.fieldmapper.gen.tests/src/com/bosch/nevonex/sdk/test	line 23	Java Problem
+The import com.bosch.nevonex.common.impl.AbsolutePosition is never used	TestFilClient.java	/com.bosch.fsp.fieldmapper.gen.tests/src/com/bosch/nevonex/sdk/test	line 40	Java Problem
+The import com.bosch.nevonex.common.impl.CommonFactory is never used	HMIControlTest.java	/com.bosch.fsp.fieldmapper.gen.tests/src/com/bosch/nevonex/sdk/test	line 22	Java Problem
+The import com.bosch.nevonex.common.ITopicObject is never used	Boom.java	/com.bosch.fsp.fieldmapper.gen/src/com/bosch/nevonex/implement/impl	line 8	Java Problem
+The import com.bosch.nevonex.common.ITopicObject is never used	Channel.java	/com.bosch.fsp.fieldmapper.gen/src/com/bosch/nevonex/implement/impl	line 8	Java Problem
+The import com.bosch.nevonex.common.ITopicObject is never used	Connector.java	/com.bosch.fsp.fieldmapper.gen/src/com/bosch/nevonex/implement/impl	line 6	Java Problem
+The import com.bosch.nevonex.common.ITopicObject is never used	Implement.java	/com.bosch.fsp.fieldmapper.gen/src/com/bosch/nevonex/implement/impl	line 10	Java Problem
+The import com.bosch.nevonex.common.ITopicObject is never used	Section.java	/com.bosch.fsp.fieldmapper.gen/src/com/bosch/nevonex/implement/impl	line 6	Java Problem
+The import com.bosch.nevonex.common.ITopicObject is never used	SubChannel.java	/com.bosch.fsp.fieldmapper.gen/src/com/bosch/nevonex/implement/impl	line 6	Java Problem
+The import com.bosch.nevonex.fcb.impl.ConnectionFactory is never used	HMIWebsocketEndpoint.java	/com.bosch.fsp.fieldmapper.gen/src/com/bosch/nevonex/userdefined/impl	line 13	Java Problem
+The import com.bosch.nevonex.types.IPropertyChange is never used	ImplementProvider.java	/com.bosch.fsp.fieldmapper.gen/src/com/bosch/nevonex/implement/impl	line 35	Java Problem
+The import com.google.gson.Gson is never used	TestFilClient.java	/com.bosch.fsp.fieldmapper.gen.tests/src/com/bosch/nevonex/sdk/test	line 35	Java Problem
+The import com.google.gson.JsonArray is never used	TestFilClient.java	/com.bosch.fsp.fieldmapper.gen.tests/src/com/bosch/nevonex/sdk/test	line 34	Java Problem
+The import java.io.FileInputStream is never used	UpdateTask.java	/com.bosch.fsp.fieldmapper.gen.tests/src/com/bosch/nevonex/sdk/test	line 10	Java Problem
+The import java.io.File is never used	UIWebServiceProvider.java	/com.bosch.fsp.fieldmapper.gen.tests/src/com/bosch/nevonex/sdk/test	line 10	Java Problem
+The import java.io.FileNotFoundException is never used	UpdateTask.java	/com.bosch.fsp.fieldmapper.gen.tests/src/com/bosch/nevonex/sdk/test	line 11	Java Problem
+The import java.io.InputStream is never used	HMIWebsocketEndpoint.java	/com.bosch.fsp.fieldmapper.gen/src/com/bosch/nevonex/userdefined/impl	line 21	Java Problem
+The import java.io.IOException is never used	MockFIF.java	/com.bosch.fsp.fieldmapper.gen.tests/src/com/bosch/nevonex/sdk/test	line 6	Java Problem
+The import java.net.URI is never used	MockWebsocketClient.java	/com.bosch.fsp.fieldmapper.gen.tests/src/com/bosch/nevonex/sdk/test	line 7	Java Problem
+The import java.sql.Timestamp is never used	HMIWebsocketEndpoint.java	/com.bosch.fsp.fieldmapper.gen/src/com/bosch/nevonex/userdefined/impl	line 23	Java Problem
+The import java.util.concurrent.Executors is never used	HMIWebsocketEndpoint.java	/com.bosch.fsp.fieldmapper.gen/src/com/bosch/nevonex/userdefined/impl	line 31	Java Problem
+The import java.util.concurrent.ScheduledExecutorService is never used	HMIWebsocketEndpoint.java	/com.bosch.fsp.fieldmapper.gen/src/com/bosch/nevonex/userdefined/impl	line 33	Java Problem
+The import java.util.concurrent.TimeUnit is never used	HMIWebsocketEndpoint.java	/com.bosch.fsp.fieldmapper.gen/src/com/bosch/nevonex/userdefined/impl	line 34	Java Problem
+The import java.util.LinkedHashMap is never used	UpdateTask.java	/com.bosch.fsp.fieldmapper.gen.tests/src/com/bosch/nevonex/sdk/test	line 17	Java Problem
+The import java.util.logging.Level is never used	HMIControlTest.java	/com.bosch.fsp.fieldmapper.gen.tests/src/com/bosch/nevonex/sdk/test	line 10	Java Problem
+The import java.util.logging.Level is never used	MockFIF.java	/com.bosch.fsp.fieldmapper.gen.tests/src/com/bosch/nevonex/sdk/test	line 8	Java Problem
+The import java.util.logging.Level is never used	SDKTest.java	/com.bosch.fsp.fieldmapper.gen.tests/src/com/bosch/nevonex/sdk/test	line 13	Java Problem
+The import java.util.logging.Level is never used	TestFilClient.java	/com.bosch.fsp.fieldmapper.gen.tests/src/com/bosch/nevonex/sdk/test	line 39	Java Problem
+The import java.util.Map.Entry is never used	UpdateTask.java	/com.bosch.fsp.fieldmapper.gen.tests/src/com/bosch/nevonex/sdk/test	line 19	Java Problem
+The import java.util.Properties is never used	HMIWebsocketEndpoint.java	/com.bosch.fsp.fieldmapper.gen/src/com/bosch/nevonex/userdefined/impl	line 29	Java Problem
+The import java.util.Random is never used	HMIControlTest.java	/com.bosch.fsp.fieldmapper.gen.tests/src/com/bosch/nevonex/sdk/test	line 23	Java Problem
+The import org.eclipse.emf.ecore.EObject is never used	AbsolutePosition.java	/com.bosch.fsp.fieldmapper.gen/src/com/bosch/nevonex/common/impl	line 9	Java Problem
+The import org.eclipse.emf.ecore.EObject is never used	ConnectionFactory.java	/com.bosch.fsp.fieldmapper.gen/src/com/bosch/nevonex/fcb/impl	line 71	Java Problem
+The import org.eclipse.emf.ecore.EObject is never used	PublishConnectionFactory.java	/com.bosch.fsp.fieldmapper.gen/src/com/bosch/nevonex/fcb/impl	line 47	Java Problem
+The import org.eclipse.emf.ecore.EObject is never used	TopicObject.java	/com.bosch.fsp.fieldmapper.gen/src/com/bosch/nevonex/common/impl	line 14	Java Problem
+The import org.eclipse.emf.ecore.impl.EObjectImpl is never used	ApplicationMain.java	/fieldmapper/src/com/bosch/nevonex/main/impl	line 37	Java Problem
+The import org.eclipse.emf.ecore.impl.EObjectImpl is never used	FeatureManagerListener.java	/fieldmapper/src/com/bosch/nevonex/main/impl	line 14	Java Problem
+The import org.eclipse.emf.ecore.impl.EObjectImpl is never used	HMIWebsocketEndpoint.java	/com.bosch.fsp.fieldmapper.gen/src/com/bosch/nevonex/userdefined/impl	line 40	Java Problem
+The import org.eclipse.emf.ecore.impl.EObjectImpl is never used	IgnitionStateListener.java	/fieldmapper/src/com/bosch/nevonex/main/impl	line 15	Java Problem
+The import org.eclipse.emf.ecore.impl.EObjectImpl is never used	MachineConnectListener.java	/fieldmapper/src/com/bosch/nevonex/main/impl	line 19	Java Problem
+The import org.eclipse.jetty.websocket.api.annotations.OnWebSocketClose is never used	HMIWebsocketEndpoint.java	/com.bosch.fsp.fieldmapper.gen/src/com/bosch/nevonex/userdefined/impl	line 44	Java Problem
+The import org.eclipse.jetty.websocket.api.annotations.OnWebSocketConnect is never used	HMIWebsocketEndpoint.java	/com.bosch.fsp.fieldmapper.gen/src/com/bosch/nevonex/userdefined/impl	line 45	Java Problem
+The import org.eclipse.jetty.websocket.api.annotations.OnWebSocketError is never used	HMIWebsocketEndpoint.java	/com.bosch.fsp.fieldmapper.gen/src/com/bosch/nevonex/userdefined/impl	line 46	Java Problem
+The import org.eclipse.jetty.websocket.api.annotations.OnWebSocketMessage is never used	AbstractWebsocketEndPoint.java	/com.bosch.fsp.fieldmapper.gen/src/com/bosch/nevonex/userdefined/impl	line 39	Java Problem
+The import org.eclipse.jetty.websocket.client.ClientUpgradeRequest is never used	MockWebsocketClient.java	/com.bosch.fsp.fieldmapper.gen.tests/src/com/bosch/nevonex/sdk/test	line 13	Java Problem
+The import org.eclipse.paho.client.mqttv3.MqttCallbackExtended is never used	ConnectionFactory.java	/com.bosch.fsp.fieldmapper.gen/src/com/bosch/nevonex/fcb/impl	line 83	Java Problem
+The import org.eclipse.paho.client.mqttv3.MqttCallbackExtended is never used	PublishConnectionFactory.java	/com.bosch.fsp.fieldmapper.gen/src/com/bosch/nevonex/fcb/impl	line 57	Java Problem
+The import org.eclipse.paho.client.mqttv3.MqttCallback is never used	ConnectionFactory.java	/com.bosch.fsp.fieldmapper.gen/src/com/bosch/nevonex/fcb/impl	line 82	Java Problem
+The import org.eclipse.paho.client.mqttv3.MqttCallback is never used	PublishConnectionFactory.java	/com.bosch.fsp.fieldmapper.gen/src/com/bosch/nevonex/fcb/impl	line 56	Java Problem
+The import org.eclipse.paho.client.mqttv3.MqttMessage is never used	HMIWebsocketEndpoint.java	/com.bosch.fsp.fieldmapper.gen/src/com/bosch/nevonex/userdefined/impl	line 50	Java Problem
+The import org.junit.Assert.assertTrue is never used	SDKTest.java	/com.bosch.fsp.fieldmapper.gen.tests/src/com/bosch/nevonex/sdk/test	line 8	Java Problem
+The import org.w3c.dom is never used	ApplicationMain.java	/.JETEmitters/src/org/eclipse/emf/codegen/ecore/templates/model	line 6	Java Problem
+The import org.w3c.dom is never used	CustomUI.java	/.JETEmitters/src/org/eclipse/emf/codegen/ecore/templates/model	line 6	Java Problem
+The import org.w3c.dom is never used	FeatureManagerListener.java	/.JETEmitters/src/org/eclipse/emf/codegen/ecore/templates/model	line 6	Java Problem
+The import org.w3c.dom is never used	IgnitionStateListener.java	/.JETEmitters/src/org/eclipse/emf/codegen/ecore/templates/model	line 6	Java Problem
+The import org.w3c.dom is never used	MachineConnect.java	/.JETEmitters/src/org/eclipse/emf/codegen/ecore/templates/model	line 6	Java Problem
+The import org.w3c.dom is never used	UserControl.java	/.JETEmitters/src/org/eclipse/emf/codegen/ecore/templates/model	line 6	Java Problem
+The JRE container on the classpath is not a perfect match to the 'JavaSE-1.8' execution environment	MANIFEST.MF	/com.bosch.fsp.fieldmapper.gen.tests/META-INF	line 9	Plug-in Problem
+The JRE container on the classpath is not a perfect match to the 'JavaSE-1.8' execution environment	MANIFEST.MF	/com.bosch.fsp.fieldmapper.gen/META-INF	line 10	Plug-in Problem
+The JRE container on the classpath is not a perfect match to the 'JavaSE-1.8' execution environment	MANIFEST.MF	/fieldmapper/META-INF	line 10	Plug-in Problem
+The method getType() from the type GenTypedElement is deprecated	Class_.java	/.JETEmitters/src/org/eclipse/emf/codegen/ecore/templates/model	line 5177	Java Problem
+The method getType() from the type GenTypedElement is deprecated	Class_.java	/.JETEmitters/src/org/eclipse/emf/codegen/ecore/templates/model	line 5229	Java Problem
+The method getType() from the type GenTypedElement is deprecated	CustomUI.java	/.JETEmitters/src/org/eclipse/emf/codegen/ecore/templates/model	line 3866	Java Problem
+The method getType() from the type GenTypedElement is deprecated	CustomUI.java	/.JETEmitters/src/org/eclipse/emf/codegen/ecore/templates/model	line 3871	Java Problem
+The method getType() from the type GenTypedElement is deprecated	CustomUI.java	/.JETEmitters/src/org/eclipse/emf/codegen/ecore/templates/model	line 3872	Java Problem
+The method getTypeClassifier() from the type GenTypedElement is deprecated	Class_.java	/.JETEmitters/src/org/eclipse/emf/codegen/ecore/templates/model	line 5129	Java Problem
+The method getTypeClassifier() from the type GenTypedElement is deprecated	Class_.java	/.JETEmitters/src/org/eclipse/emf/codegen/ecore/templates/model	line 5161	Java Problem
+The method removePrefixes(String) from the type ConnectionFactory is never used locally	ConnectionFactory.java	/com.bosch.fsp.fieldmapper.gen/src/com/bosch/nevonex/fcb/impl	line 364	Java Problem
+The method setFeatureID(String) from the type NEVONEXApplication is deprecated	ApplicationMain.java	/fieldmapper/src/com/bosch/nevonex/main/impl	line 98	Java Problem
+The value of the field ConnectionFactory.topicElementMap is not used	ConnectionFactory.java	/com.bosch.fsp.fieldmapper.gen/src/com/bosch/nevonex/fcb/impl	line 178	Java Problem
+The value of the field SDKTest.prop is not used	SDKTest.java	/com.bosch.fsp.fieldmapper.gen.tests/src/com/bosch/nevonex/sdk/test	line 49	Java Problem
+The value of the local variable oldAltitude is not used	AbsolutePosition.java	/com.bosch.fsp.fieldmapper.gen/src/com/bosch/nevonex/common/impl	line 102	Java Problem
+The value of the local variable oldClient is not used	ConnectionFactory.java	/com.bosch.fsp.fieldmapper.gen/src/com/bosch/nevonex/fcb/impl	line 623	Java Problem
+The value of the local variable oldClient is not used	PublishConnectionFactory.java	/com.bosch.fsp.fieldmapper.gen/src/com/bosch/nevonex/fcb/impl	line 433	Java Problem
+The value of the local variable oldConnector is not used	Implement.java	/com.bosch.fsp.fieldmapper.gen/src/com/bosch/nevonex/implement/impl	line 206	Java Problem
+The value of the local variable oldController is not used	Boom.java	/com.bosch.fsp.fieldmapper.gen/src/com/bosch/nevonex/implement/impl	line 144	Java Problem
+The value of the local variable oldController is not used	Channel.java	/com.bosch.fsp.fieldmapper.gen/src/com/bosch/nevonex/implement/impl	line 134	Java Problem
+The value of the local variable oldController is not used	Connector.java	/com.bosch.fsp.fieldmapper.gen/src/com/bosch/nevonex/implement/impl	line 118	Java Problem
+The value of the local variable oldController is not used	Implement.java	/com.bosch.fsp.fieldmapper.gen/src/com/bosch/nevonex/implement/impl	line 165	Java Problem
+The value of the local variable oldController is not used	ImplementProvider.java	/com.bosch.fsp.fieldmapper.gen/src/com/bosch/nevonex/implement/impl	line 315	Java Problem
+The value of the local variable oldController is not used	Section.java	/com.bosch.fsp.fieldmapper.gen/src/com/bosch/nevonex/implement/impl	line 118	Java Problem
+The value of the local variable oldController is not used	SubChannel.java	/com.bosch.fsp.fieldmapper.gen/src/com/bosch/nevonex/implement/impl	line 118	Java Problem
+The value of the local variable oldEnabledDisabledTopicMap is not used	PublishConnectionFactory.java	/com.bosch.fsp.fieldmapper.gen/src/com/bosch/nevonex/fcb/impl	line 524	Java Problem
+The value of the local variable oldIndex is not used	TopicObject.java	/com.bosch.fsp.fieldmapper.gen/src/com/bosch/nevonex/common/impl	line 82	Java Problem
+The value of the local variable oldLatitude is not used	AbsolutePosition.java	/com.bosch.fsp.fieldmapper.gen/src/com/bosch/nevonex/common/impl	line 118	Java Problem
+The value of the local variable oldLongitude is not used	AbsolutePosition.java	/com.bosch.fsp.fieldmapper.gen/src/com/bosch/nevonex/common/impl	line 134	Java Problem
+The value of the local variable oldMachinePathMap is not used	ConnectionFactory.java	/com.bosch.fsp.fieldmapper.gen/src/com/bosch/nevonex/fcb/impl	line 687	Java Problem
+The value of the local variable oldMachinePathMap is not used	PublishConnectionFactory.java	/com.bosch.fsp.fieldmapper.gen/src/com/bosch/nevonex/fcb/impl	line 497	Java Problem
+The value of the local variable oldPayloadMap is not used	ConnectionFactory.java	/com.bosch.fsp.fieldmapper.gen/src/com/bosch/nevonex/fcb/impl	line 655	Java Problem
+The value of the local variable oldPayloadMap is not used	PublishConnectionFactory.java	/com.bosch.fsp.fieldmapper.gen/src/com/bosch/nevonex/fcb/impl	line 465	Java Problem
+The value of the local variable oldPrefixMap is not used	ConnectionFactory.java	/com.bosch.fsp.fieldmapper.gen/src/com/bosch/nevonex/fcb/impl	line 671	Java Problem
+The value of the local variable oldPrefixMap is not used	PublishConnectionFactory.java	/com.bosch.fsp.fieldmapper.gen/src/com/bosch/nevonex/fcb/impl	line 481	Java Problem
+The value of the local variable oldTopicMap is not used	ConnectionFactory.java	/com.bosch.fsp.fieldmapper.gen/src/com/bosch/nevonex/fcb/impl	line 639	Java Problem
+The value of the local variable oldTopicMap is not used	PublishConnectionFactory.java	/com.bosch.fsp.fieldmapper.gen/src/com/bosch/nevonex/fcb/impl	line 449	Java Problem
+The value of the local variable oldTopicMap is not used	UserControls.java	/com.bosch.fsp.fieldmapper.gen/src/com/bosch/nevonex/userdefined/impl	line 281	Java Problem
+The value of the local variable oldType is not used	Implement.java	/com.bosch.fsp.fieldmapper.gen/src/com/bosch/nevonex/implement/impl	line 181	Java Problem
+The value of the local variable providersListInfo is not used	ApplicationMain.java	/.JETEmitters/src/org/eclipse/emf/codegen/ecore/templates/model	line 3977	Java Problem
+Type safety: The constructor ArrayList(Collection) belongs to the raw type ArrayList. References to generic type ArrayList<E> should be parameterized	BulkProcessor.java	/com.bosch.fsp.fieldmapper.gen/src/com/bosch/nevonex/fcal/impl	line 75	Java Problem
+Type safety: The constructor ArrayList(Collection) belongs to the raw type ArrayList. References to generic type ArrayList<E> should be parameterized	UserControls.java	/com.bosch.fsp.fieldmapper.gen/src/com/bosch/nevonex/userdefined/impl	line 333	Java Problem
+Type safety: The constructor ArrayList(Collection) belongs to the raw type ArrayList. References to generic type ArrayList<E> should be parameterized	UserControls.java	/com.bosch.fsp.fieldmapper.gen/src/com/bosch/nevonex/userdefined/impl	line 460	Java Problem
+Type safety: The expression of type ArrayList needs unchecked conversion to conform to List<EObject>	BulkProcessor.java	/com.bosch.fsp.fieldmapper.gen/src/com/bosch/nevonex/fcal/impl	line 75	Java Problem
+Type safety: The method add(Object) belongs to the raw type Collection. References to generic type Collection<E> should be parameterized	ImplementProvider.java	/com.bosch.fsp.fieldmapper.gen/src/com/bosch/nevonex/implement/impl	line 423	Java Problem
+Type safety: The method add(Object) belongs to the raw type Collection. References to generic type Collection<E> should be parameterized	ImplementProvider.java	/com.bosch.fsp.fieldmapper.gen/src/com/bosch/nevonex/implement/impl	line 494	Java Problem
+Type safety: The method add(Object) belongs to the raw type List. References to generic type List<E> should be parameterized	ImplementProvider.java	/com.bosch.fsp.fieldmapper.gen/src/com/bosch/nevonex/implement/impl	line 422	Java Problem
