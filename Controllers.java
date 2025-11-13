@@ -23,6 +23,7 @@ import org.eclipse.emf.ecore.util.InternalEList;
 
 /**
  * TEAM 6: Field Mapper (MOCK GPS + SAFE LOGGING)
+ * 100% COMPATIBLE WITH YOUR SKELETON
  */
 public class Controllers extends EObjectImpl implements IControllers {
 
@@ -38,21 +39,26 @@ public class Controllers extends EObjectImpl implements IControllers {
     private double mockLng = 9.5678;
     private int step = 0;
 
-    @Override
-    public void init() {
-        try {
-            if (getImplements().isEmpty()) {
-                LOG.error("team6-fieldmapper: No implement connected");
-                return;
-            }
-            LOG.info("team6-fieldmapper: INIT SUCCESS (MOCK MODE)");
-        } catch (Exception e) {
-            LOG.error("team6-fieldmapper: Init failed: " + ExceptionUtils.getRootCauseMessage(e));
-        }
-    }
+    private IImplement implement;
 
+    // === ONLY run() IS REQUIRED ===
     @Override
     public synchronized void run() {
+        // === INITIALIZE ON FIRST RUN ===
+        if (implement == null) {
+            try {
+                if (getImplements().isEmpty()) {
+                    LOG.log.error("team6-fieldmapper: No implement connected");
+                    return;
+                }
+                implement = getImplements().get(0);
+                LOG.log.error("team6-fieldmapper: FIRST RUN - MOCK MODE ACTIVE");
+            } catch (Exception e) {
+                LOG.log.error("team6-fieldmapper: Init failed: " + ExceptionUtils.getRootCauseMessage(e));
+                return;
+            }
+        }
+
         if (!recording) return;
 
         try {
@@ -67,9 +73,9 @@ public class Controllers extends EObjectImpl implements IControllers {
             boolean inRedZone = isInRedZone(lat, lng);
 
             if (inRedZone && !lastInRedZone) {
-                LOG.warn("team6-fieldmapper: MOCK ENTERED RED ZONE");
+                LOG.log.error("team6-fieldmapper: MOCK ENTERED RED ZONE");
             } else if (!inRedZone && lastInRedZone) {
-                LOG.info("team6-fieldmapper: MOCK EXITED RED ZONE");
+                LOG.log.error("team6-fieldmapper: MOCK EXITED RED ZONE");
             }
 
             lastInRedZone = inRedZone;
@@ -78,7 +84,7 @@ public class Controllers extends EObjectImpl implements IControllers {
                 if (points.size() < MAX_POINTS) {
                     points.add(new double[]{lat, lng});
                     if (points.size() % 20 == 0) {
-                        LOG.info("team6-fieldmapper: MOCK Recorded " + points.size() + " points");
+                    LOG.log.error("team6-fieldmapper: MOCK Recorded " + points.size() + " points");
                     }
                 } else {
                     stopRecording();
@@ -86,7 +92,7 @@ public class Controllers extends EObjectImpl implements IControllers {
             }
 
         } catch (Exception e) {
-            LOG.error("team6-fieldmapper: Run error: " + ExceptionUtils.getRootCauseMessage(e));
+            LOG.log.error("team6-fieldmapper: Run error: " + ExceptionUtils.getRootCauseMessage(e));
         }
     }
 
@@ -113,7 +119,7 @@ public class Controllers extends EObjectImpl implements IControllers {
         step = 0;
         mockLat = 51.1234;
         mockLng = 9.5678;
-        LOG.info("team6-fieldmapper: MOCK START RECORDING");
+        LOG.log.error("team6-fieldmapper: MOCK START RECORDING");
     }
 
     public void onBtnStop() {
@@ -122,12 +128,12 @@ public class Controllers extends EObjectImpl implements IControllers {
 
     private void stopRecording() {
         recording = false;
-        LOG.info("team6-fieldmapper: MOCK STOPPED - " + points.size() + " points");
+        LOG.log.error("team6-fieldmapper: MOCK STOPPED - " + points.size() + " points");
     }
 
     public void onTglRedZone(boolean enabled) {
         redZoneProtection = enabled;
-        LOG.info("team6-fieldmapper: Red Zone Protection " + (enabled ? "ON" : "OFF"));
+        LOG.log.error("team6-fieldmapper: Red Zone Protection " + (enabled ? "ON" : "OFF"));
     }
 
     // === GENERATED CODE (FROM YOUR SKELETON) ===
