@@ -1,0 +1,24 @@
+<!-- Map Widget -->
+<widget id="mapCoverage" type="map" label="Field Coverage" 
+        dataFormat="heatmap" width="100%" height="60%"/>
+
+<!-- Buttons -->
+<widget id="btnStart" type="button" label="START" 
+        color="green" fontWeight="bold" width="48%"/>
+
+<widget id="btnStop" type="button" label="STOP & UPLOAD" 
+        color="red" fontWeight="bold" width="48%"/>
+
+<!-- Toggle -->
+<widget id="tglRedZone" type="toggle" label="Red Zone Protection" 
+        defaultValue="true" width="100%"/>
+
+<!-- Text Outputs -->
+<widget id="txtStatus" type="text" label="" 
+        fontSize="16" textAlign="center" width="100%"/>
+
+<widget id="txtAlert" type="text" label="" 
+        color="red" fontWeight="bold" fontSize="18" textAlign="center" width="100%"/>
+
+<widget id="txtTeam" type="text" label="TEAM 6" 
+        color="gray" fontSize="14" textAlign="right" width="100%"/>

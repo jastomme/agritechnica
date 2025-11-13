@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+    <feature>
+        <id>team6-fieldmapper</id>
+        <name>TEAM 6 Field Mapper</name>
+        <version>1.1.0</version>
+        <description>Live coverage + red zone protection</description>
+        <providerId>2dad3ad0-ba86-4ea2-9f21-a651fe36f1d9</providerId>
+    </feature>
+</manifest>
