@@ -22,8 +22,7 @@ import org.eclipse.emf.ecore.util.BasicInternalEList;
 import org.eclipse.emf.ecore.util.InternalEList;
 
 /**
- * TEAM 6: Field Mapper (NO GPS — MOCK MODE)
- * 100% COMPATIBLE WITH YOUR SKELETON
+ * TEAM 6: Field Mapper (MOCK GPS + SAFE LOGGING)
  */
 public class Controllers extends EObjectImpl implements IControllers {
 
@@ -35,7 +34,6 @@ public class Controllers extends EObjectImpl implements IControllers {
     private boolean redZoneProtection = true;
     private boolean lastInRedZone = false;
 
-    // MOCK GPS — simulate movement
     private double mockLat = 51.1234;
     private double mockLng = 9.5678;
     private int step = 0;
@@ -44,12 +42,12 @@ public class Controllers extends EObjectImpl implements IControllers {
     public void init() {
         try {
             if (getImplements().isEmpty()) {
-                LOG.error("team6-fieldmapper: No implement");
+                LOG.error("team6-fieldmapper: No implement connected");
                 return;
             }
-            LOG.info("team6-fieldmapper: INIT OK (MOCK GPS MODE)");
+            LOG.info("team6-fieldmapper: INIT SUCCESS (MOCK MODE)");
         } catch (Exception e) {
-            LOG.error("Init failed: " + ExceptionUtils.getRootCauseMessage(e));
+            LOG.error("team6-fieldmapper: Init failed: " + ExceptionUtils.getRootCauseMessage(e));
         }
     }
 
@@ -58,7 +56,6 @@ public class Controllers extends EObjectImpl implements IControllers {
         if (!recording) return;
 
         try {
-            // === MOCK GPS ===
             step++;
             mockLat += 0.0001 * (step % 20 < 10 ? 1 : -1);
             mockLng += 0.00005;
@@ -70,9 +67,9 @@ public class Controllers extends EObjectImpl implements IControllers {
             boolean inRedZone = isInRedZone(lat, lng);
 
             if (inRedZone && !lastInRedZone) {
-                LOG.warn("MOCK: ENTERED RED ZONE");
+                LOG.warn("team6-fieldmapper: MOCK ENTERED RED ZONE");
             } else if (!inRedZone && lastInRedZone) {
-                LOG.info("MOCK: EXITED RED ZONE");
+                LOG.info("team6-fieldmapper: MOCK EXITED RED ZONE");
             }
 
             lastInRedZone = inRedZone;
@@ -81,7 +78,7 @@ public class Controllers extends EObjectImpl implements IControllers {
                 if (points.size() < MAX_POINTS) {
                     points.add(new double[]{lat, lng});
                     if (points.size() % 20 == 0) {
-                        LOG.info("MOCK: Recorded " + points.size() + " points");
+                        LOG.info("team6-fieldmapper: MOCK Recorded " + points.size() + " points");
                     }
                 } else {
                     stopRecording();
@@ -89,7 +86,7 @@ public class Controllers extends EObjectImpl implements IControllers {
             }
 
         } catch (Exception e) {
-            LOG.error("Run error: " + ExceptionUtils.getRootCauseMessage(e));
+            LOG.error("team6-fieldmapper: Run error: " + ExceptionUtils.getRootCauseMessage(e));
         }
     }
 
@@ -116,7 +113,7 @@ public class Controllers extends EObjectImpl implements IControllers {
         step = 0;
         mockLat = 51.1234;
         mockLng = 9.5678;
-        LOG.info("MOCK: START RECORDING");
+        LOG.info("team6-fieldmapper: MOCK START RECORDING");
     }
 
     public void onBtnStop() {
@@ -125,15 +122,15 @@ public class Controllers extends EObjectImpl implements IControllers {
 
     private void stopRecording() {
         recording = false;
-        LOG.info("MOCK: STOPPED - " + points.size() + " points");
+        LOG.info("team6-fieldmapper: MOCK STOPPED - " + points.size() + " points");
     }
 
     public void onTglRedZone(boolean enabled) {
         redZoneProtection = enabled;
-        LOG.info("MOCK: Red Zone Protection " + (enabled ? "ON" : "OFF"));
+        LOG.info("team6-fieldmapper: Red Zone Protection " + (enabled ? "ON" : "OFF"));
     }
 
-    // === GENERATED CODE (EXACT FROM SKELETON) ===
+    // === GENERATED CODE (FROM YOUR SKELETON) ===
     protected EList<IImplement> implements_;
 
     protected Controllers() { super(); }
