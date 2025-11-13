@@ -1,0 +1,7 @@
+<widget id="mapCoverage" type="map" label="Coverage" dataFormat="heatmap" width="100%" height="60%"/>
+<widget id="btnStart" type="button" label="START" color="green" width="48%"/>
+<widget id="btnStop" type="button" label="STOP" color="red" width="48%"/>
+<widget id="tglRedZone" type="toggle" label="Red Zone Protection" defaultValue="true"/>
+<widget id="txtStatus" type="text" label=""/>
+<widget id="txtAlert" type="text" label="" color="red" fontWeight="bold" fontSize="18"/>
+<widget id="txtTeam" type="text" label="TEAM 6" color="gray" textAlign="right"/>
