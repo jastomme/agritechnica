@@ -1,0 +1,42 @@
+{
+  "title": "TEAM 6 Field Mapper",
+  "identifier": "team6-fieldmapper",
+  "viewPort": { "width": "100%", "height": "100%" },
+  "tabs": [
+    {
+      "name": "Control",
+      "contentHeight": "64vh",
+      "layout": {
+        "type": "column",
+        "count": 1,
+        "column_1": {
+          "controls": {
+            "row_1": [
+              { "widget": true, "type": "button", "control_id": "btnStart", "label": "START", "control_mode": "Input" },
+              { "widget": true, "type": "button", "control_id": "btnStop", "label": "STOP", "control_mode": "Input" }
+            ],
+            "row_2": [
+              { "widget": true, "type": "toggle", "control_id": "tglRedZone", "label": "Red Zone", "defaultValue": true, "control_mode": "Input" }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "name": "Map",
+      "contentHeight": "64vh",
+      "mapPrefixes": "map",
+      "layout": {
+        "type": "column",
+        "count": 1,
+        "column_1": {
+          "controls": {
+            "row_1": [
+              { "widget": true, "type": "map", "control_id": "mapCoverage", "dataFormat": "heatmap", "control_mode": "Output" }
+            ]
+          }
+        }
+      }
+    }
+  ]
+}

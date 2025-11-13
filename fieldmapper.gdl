@@ -1,7 +1,138 @@
-<widget id="mapCoverage" type="map" label="Coverage" dataFormat="heatmap" width="100%" height="60%"/>
-<widget id="btnStart" type="button" label="START" color="green" width="48%"/>
-<widget id="btnStop" type="button" label="STOP" color="red" width="48%"/>
-<widget id="tglRedZone" type="toggle" label="Red Zone Protection" defaultValue="true"/>
-<widget id="txtStatus" type="text" label=""/>
-<widget id="txtAlert" type="text" label="" color="red" fontWeight="bold" fontSize="18"/>
-<widget id="txtTeam" type="text" label="TEAM 6" color="gray" textAlign="right"/>
+{
+  "title": "TEAM 6 Field Mapper",
+  "identifier": "team6-fieldmapper",
+  "fcal_prefix_pub": "fcal2fgf/",
+  "fcal_prefix_sub": "fgf2fcal/",
+  "viewPort": {
+    "width": "100%",
+    "height": "100%",
+    "border": "1px solid green"
+  },
+  "tabs": [
+    {
+      "name": "Control",
+      "headerStyle": "color:green;font-weight:bold",
+      "contentHeight": "64vh",
+      "layout": {
+        "type": "column",
+        "count": 1,
+        "column_1": {
+          "width": "100%",
+          "height": "100%",
+          "controls": {
+            "row_1": [
+              {
+                "widget": true,
+                "type": "button",
+                "prefix": "btnStart",
+                "label": "START",
+                "control_id": "btnStart",
+                "control_mode": "Input",
+                "wrapperStyle": "width:48%;float:left;margin:5px;",
+                "labelStyle": "background:green;color:white;font-weight:bold"
+              },
+              {
+                "widget": true,
+                "type": "button",
+                "prefix": "btnStop",
+                "label": "STOP",
+                "control_id": "btnStop",
+                "control_mode": "Input",
+                "wrapperStyle": "width:48%;float:left;margin:5px;",
+                "labelStyle": "background:red;color:white;font-weight:bold"
+              }
+            ],
+            "row_2": [
+              {
+                "widget": true,
+                "type": "toggle",
+                "prefix": "tglRedZone",
+                "label": "Red Zone Protection",
+                "control_id": "tglRedZone",
+                "control_mode": "Input",
+                "defaultValue": true,
+                "wrapperStyle": "width:100%;margin:10px;"
+              }
+            ],
+            "row_3": [
+              {
+                "widget": true,
+                "type": "textbox",
+                "prefix": "txtStatus",
+                "label": "Status",
+                "control_id": "txtStatus",
+                "control_mode": "Output",
+                "defaultValue": "Ready",
+                "wrapperStyle": "width:100%;font-weight:bold;text-align:center;"
+              }
+            ],
+            "row_4": [
+              {
+                "widget": true,
+                "type": "textbox",
+                "prefix": "txtAlert",
+                "label": "",
+                "control_id": "txtAlert",
+                "control_mode": "Output",
+                "defaultValue": "",
+                "wrapperStyle": "width:100%;color:red;font-weight:bold;text-align:center;"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "name": "Map",
+      "headerStyle": "color:blue;font-weight:bold",
+      "contentHeight": "64vh",
+      "mapPrefixes": "map",
+      "layout": {
+        "type": "column",
+        "count": 1,
+        "column_1": {
+          "width": "100%",
+          "height": "100%",
+          "controls": {
+            "row_1": [
+              {
+                "widget": true,
+                "type": "map",
+                "prefix": "mapCoverage",
+                "control_id": "mapCoverage",
+                "control_mode": "Output",
+                "dataFormat": "heatmap",
+                "wrapperStyle": "width:100%;height:86vh;overflow:auto;"
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "name": "Logs",
+      "headerStyle": "color:gray",
+      "contentHeight": "64vh",
+      "layout": {
+        "type": "column",
+        "count": 1,
+        "column_1": {
+          "controls": {
+            "row_1": [
+              {
+                "widget": true,
+                "type": "textbox",
+                "prefix": "myCustomWidget001",
+                "label": "Debug Log",
+                "control_id": "myCustomWidget001",
+                "control_mode": "Output",
+                "defaultValue": "Logs appear here...",
+                "wrapperStyle": "width:100%;height:100%;font-family:monospace;font-size:12px;overflow:auto;"
+              }
+            ]
+          }
+        }
+      }
+    }
+  ]
+}
