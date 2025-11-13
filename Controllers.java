@@ -7,8 +7,6 @@ import com.bosch.fsp.logger.FCALLogs;
 import com.bosch.nevonex.implement.IImplement;
 import com.bosch.nevonex.main.IApplicationInputData;
 import com.bosch.nevonex.main.IControllers;
-import com.bosch.nevonex.usercontrols.UserControls;
-import com.bosch.nevonex.usercontrols.UserControlsException;
 
 import java.util.ArrayList;
 import java.util.Collection;
@@ -25,14 +23,14 @@ import org.eclipse.emf.ecore.util.InternalEList;
 
 /**
  * TEAM 6: Field Mapper + Red Zone Protection
- * FULLY COMPATIBLE WITH YOUR SKELETON
+ * 100% COMPATIBLE WITH YOUR SKELETON
  */
 public class Controllers extends EObjectImpl implements IControllers {
 
     private static final FCALLogs LOG = FCALLogs.getInstance();
     private static final int MAX_POINTS = 5000;
 
-    // Hardcoded red zone polygon (lat, lng)
+    // Hardcoded red zone (lat, lng)
     private static final double[][] RED_ZONE = {
         {51.1234, 9.5678},
         {51.1240, 9.5685},
@@ -52,18 +50,12 @@ public class Controllers extends EObjectImpl implements IControllers {
         try {
             if (getImplements().isEmpty()) {
                 LOG.error("team6-fieldmapper: No implement connected");
-                UserControls.getInstance().setOutputWidget("txtStatus", "No Machine");
                 return;
             }
 
             implement = getImplements().get(0);
+            LOG.info("team6-fieldmapper: INIT SUCCESS - Implement connected");
 
-            UserControls.getInstance().setOutputWidget("txtTeam", "TEAM 6");
-            UserControls.getInstance().setOutputWidget("txtStatus", "Ready");
-            UserControls.getInstance().setOutputWidget("tglRedZone", true);
-            UserControls.getInstance().setOutputWidget("txtAlert", "");
-
-            LOG.info("team6-fieldmapper: INIT SUCCESS");
         } catch (Exception e) {
             LOG.error("team6-fieldmapper: Init failed: " + ExceptionUtils.getRootCauseMessage(e));
         }
@@ -74,7 +66,6 @@ public class Controllers extends EObjectImpl implements IControllers {
         if (implement == null || !recording) return;
 
         try {
-            // === GET GPS FROM IMPLEMENT ===
             double lat = implement.getPosition().getLatitude();
             double lng = implement.getPosition().getLongitude();
 
@@ -85,41 +76,34 @@ public class Controllers extends EObjectImpl implements IControllers {
 
             boolean inRedZone = isInRedZone(lat, lng);
 
-            // === TOGGLE FROM UI ===
-            try {
-                redZoneProtection = UserControls.getInstance().getInputWidget("tglRedZone", Boolean.class);
-            } catch (UserControlsException ignored) {}
-
-            // === RED ZONE ALERT ===
+            // === RED ZONE LOGIC ===
             if (inRedZone && !lastInRedZone) {
-                UserControls.getInstance().setOutputWidget("txtAlert", "RED ZONE! NO RECORDING");
-                LOG.warn("team6-fieldmapper: ENTERED RED ZONE");
+                LOG.warn("team6-fieldmapper: ENTERED RED ZONE - PAUSING RECORD");
             } else if (!inRedZone && lastInRedZone) {
-                UserControls.getInstance().setOutputWidget("txtAlert", "");
-                LOG.info("team6-fieldmapper: EXITED RED ZONE");
+                LOG.info("team6-fieldmapper: EXITED RED ZONE - RESUMED");
             }
 
             lastInRedZone = inRedZone;
 
-            // === RECORD IF SAFE ===
             if (!inRedZone || !redZoneProtection) {
                 if (points.size() < MAX_POINTS) {
                     points.add(new double[]{lat, lng});
-                    updateHeatMap();
+                    LOG.info("team6-fieldmapper: Point recorded: " + lat + ", " + lng);
                 } else {
                     LOG.warn("team6-fieldmapper: Max points reached");
                     stopRecording();
                 }
             }
 
-            updateStatus();
+            if (points.size() % 100 == 0) {
+                LOG.info("team6-fieldmapper: Recorded " + points.size() + " points");
+            }
 
         } catch (Exception e) {
             LOG.error("team6-fieldmapper: Run error: " + ExceptionUtils.getRootCauseMessage(e));
         }
     }
 
-    // === POINT-IN-POLYGON ALGORITHM ===
     private boolean isInRedZone(double lat, double lng) {
         int n = RED_ZONE.length;
         boolean inside = false;
@@ -134,36 +118,10 @@ public class Controllers extends EObjectImpl implements IControllers {
         return inside;
     }
 
-    // === UPDATE HEAT MAP ===
-    private void updateHeatMap() {
-        if (points.isEmpty()) return;
-        StringBuilder geo = new StringBuilder("[");
-        for (double[] p : points) {
-            geo.append(String.format("[[%f,%f],1],", p[0], p[1]));
-        }
-        geo.setLength(geo.length() - 1);
-        geo.append("]");
-        try {
-            UserControls.getInstance().setOutputWidget("mapCoverage", geo.toString());
-        } catch (UserControlsException e) {
-            LOG.error("Map update failed: " + ExceptionUtils.getRootCauseMessage(e));
-        }
-    }
-
-    // === UPDATE STATUS TEXT ===
-    private void updateStatus() {
-        String status = recording ? "Recording… " + points.size() + " pts" : "Ready";
-        try {
-            UserControls.getInstance().setOutputWidget("txtStatus", status);
-        } catch (UserControlsException ignored) {}
-    }
-
-    // === BUTTON HANDLERS ===
+    // === BUTTONS ===
     public void onBtnStart() {
         recording = true;
         points.clear();
-        updateHeatMap();
-        updateStatus();
         LOG.info("team6-fieldmapper: START RECORDING");
     }
 
@@ -173,10 +131,7 @@ public class Controllers extends EObjectImpl implements IControllers {
 
     private void stopRecording() {
         recording = false;
-        try {
-            UserControls.getInstance().setOutputWidget("txtStatus", "Stopped: " + points.size() + " pts");
-            LOG.info("team6-fieldmapper: STOPPED - " + points.size() + " points recorded");
-        } catch (UserControlsException ignored) {}
+        LOG.info("team6-fieldmapper: STOPPED - " + points.size() + " points recorded");
     }
 
     public void onTglRedZone(boolean enabled) {
@@ -184,7 +139,7 @@ public class Controllers extends EObjectImpl implements IControllers {
         LOG.info("team6-fieldmapper: Red Zone Protection " + (enabled ? "ON" : "OFF"));
     }
 
-    // === GENERATED CODE BELOW (FROM YOUR SKELETON) ===
+    // === GENERATED CODE BELOW (DO NOT EDIT) ===
     protected EList<IImplement> implements_;
 
     protected Controllers() {
