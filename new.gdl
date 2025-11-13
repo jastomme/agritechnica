@@ -1,0 +1,140 @@
+{
+"title" :"Bosch GPStst Control",
+"identifier" :"GPStst",
+"fcal_prefix_pub" :"fcal2fgf/",
+"fcal_prefix_sub" :"fgf2fcal/",
+"viewPort" : { 
+	 "width" :"100%",
+	 "height" :"100%",
+	 "border" :"1px solid green"
+
+ } 
+,
+"tabs" : [ 
+{	"name" :"Configuration",
+	"headerStyle" :"color:red",
+	"contentHeight" :"64vh",
+	"mapPrefixes" :"",
+"layout" : { 
+"type" :"column",
+"count" :1,
+"column_1": { 
+	 "width" :"100%",
+	 "height" :"100%",
+	 "border" :"1px solid blue",
+"controls" : { 
+"row_1": [ 
+{
+	 "widget" :true,
+	 "type" :"textbox",
+	 "model" :"myCustomWidget002Model",
+	 "defaultValue" :"",
+	 "clazz" :"form_control",
+	 "prefix" :"myCustomWidget002",
+	 "label" :"Custom Widget",
+	 "wrapperStyle" : "width:99%;overflow:auto;padding:5px;",
+	 "labelStyle" :"width:100%;color:black;text-align:left;font-weight:bold",
+	 "control_id" :"myCustomWidget002",
+	 "control_mode" :"Output"
+ }
+
+ ] 
+
+ } 
+
+ } 
+
+ } 
+},{	"name" :"Charts",
+	"headerStyle" :"color:red",
+	"contentHeight" :"64vh",
+	"mapPrefixes" :"",
+"layout" : { 
+"type" :"column",
+"count" :1,
+"column_1": { 
+	 "width" :"100%",
+	 "height" :"100%",
+	 "border" :"1px solid blue",
+"controls" : { 
+"row_1": [ 
+{
+	 "widget" :true,
+	 "type" :"textbox",
+	 "model" :"myCustomWidget001Model",
+	 "defaultValue" :"",
+	 "clazz" :"form_control",
+	 "prefix" :"myCustomWidget001",
+	 "label" :"Custom Widget",
+	 "wrapperStyle" : "width:99%;overflow:auto;padding:5px;",
+	 "labelStyle" :"width:100%;color:black;text-align:left;font-weight:bold",
+	 "control_id" :"myCustomWidget001",
+	 "control_mode" :"Output"
+ }
+
+ ], 
+"row_2": [ 
+{
+	 "widget" :true,
+	 "type" :"chart",
+	 "prefix" :"myCustomWidget007",
+	 "label" :"area",
+	 "chartType" :"area",
+	 "control_id" :"myCustomWidget007",
+	 "control_mode" :"Output",
+	 "chartModel" : [ "Model 1"],
+	 "chartAxis" : { 
+	 "x" :"Some X",
+	 "y" :"Some Y"
+	 },
+	 "wrapperStyle" :"float:left;width:100%;height:100%;border:1px solid lightgrey;padding:5px;overflow:auto;"
+ }
+
+ ] 
+
+ } 
+
+ } 
+
+ } 
+},{	"name" :"Map",
+	"headerStyle" :"color:red",
+	"contentHeight" :"64vh",
+	"mapPrefixes" :"map",
+"layout" : { 
+"type" :"column",
+"count" :1,
+"column_1": { 
+	 "width" :"100%",
+	 "height" :"100%",
+	 "border" :"1px solid blue",
+"controls" : { 
+"row_1": [ 
+{
+	 "widget" :true,
+	 "type" :"map",
+	 "drawOptions" : { 
+	 "polygon" :false,
+	 "polyline" :false,
+	 "circle" :false,
+	 "rectangle" :false,
+	 "marker" :false
+	 },
+	 "views" : ["Street","Satellite"],
+	 "defaultView" :"Street",
+	 "apis" : [ 
+ 
+ 	 ],
+	 "prefix" :"map",
+	 "wrapperStyle" : "width:99%;height:86vh;overflow:auto;padding:5px;",
+	 "drawControl" :false
+ }
+
+ ] 
+
+ } 
+
+ } 
+
+ } 
+}]}
