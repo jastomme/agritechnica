@@ -1,4 +1,14 @@
 package com.bosch.nevonex.main.impl;
+
 public class btnStopPropertyListener {
-    public void propertyChanged() { ((Controllers) getFeature()).onBtnStop(); }
+    public Object getFeature() {
+        return null; // Will be set by framework
+    }
+
+    public void propertyChanged() {
+        Controllers controller = (Controllers) getFeature();
+        if (controller != null) {
+            controller.onBtnStop();
+        }
+    }
 }

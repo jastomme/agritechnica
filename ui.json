@@ -16,23 +16,7 @@
               { "widget": true, "type": "button", "control_id": "btnStop", "label": "STOP", "control_mode": "Input" }
             ],
             "row_2": [
-              { "widget": true, "type": "toggle", "control_id": "tglRedZone", "label": "Red Zone", "defaultValue": true, "control_mode": "Input" }
-            ]
-          }
-        }
-      }
-    },
-    {
-      "name": "Map",
-      "contentHeight": "64vh",
-      "mapPrefixes": "map",
-      "layout": {
-        "type": "column",
-        "count": 1,
-        "column_1": {
-          "controls": {
-            "row_1": [
-              { "widget": true, "type": "map", "control_id": "mapCoverage", "dataFormat": "heatmap", "control_mode": "Output" }
+              { "widget": true, "type": "toggle", "control_id": "tglRedZone", "label": "Red Zone Protection", "defaultValue": true, "control_mode": "Input" }
             ]
           }
         }
